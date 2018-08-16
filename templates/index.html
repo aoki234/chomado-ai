@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AI Classifier</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/app.css">
+    <script type="text/javascript" src="/static/app.js"></script>
+</head>
+<body>
+<header>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">AI Classifier</a>
+</nav>
+</header>
+
+<div class="container">
+<br>
+<h1 class="mt-5">ちょま度判定アプリ</h1>
+      <p class="lead">エンジニア界隈で半端ない知名度を誇るちょまどさんにどれくらい似ているかを試してみましょう！！</p>
+      <h3></h3>
+
+      <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4"　style="text-align : left">
+            <img class="rounded-circle" src="/static/image/ちょまど.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h4>ちょまど</h4>
+
+          </div><!-- /.col-lg-4 -->
+<!--          <div class="col-lg-4" style="text-align : left">
+            <img class="rounded-circle" src="/static/image/池澤あやか.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h4>池澤あやか</h4>
+-->
+          </div><!-- /.col-lg-4 -->
+ <!--         <div class="col-lg-4"　style="text-align : left">
+            <img class="rounded-circle" src="/static/image/石原さとみ.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h4>石原さとみ</h4>-->
+
+          </div><!-- /.col-lg-4 -->
+<!--          <div class="col-lg-4" style="text-align : left">
+            <img class="rounded-circle" src="/static/image/剛力彩芽.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h4>剛力彩芽</h4>-->
+            
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+    <form class="form-group">
+        <input type="file" accept="image/*;device=camera" class="mt-2" id="fileField" name="fileField"/>
+    </form>
+    <img id="imageID" class="img-responsive" src="/currentimage" />
+    <p>
+      <span id="prediction">-</span><br>
+      <span id="confidence">-</span>
+    </p>
+</div>
+
+<hr class="featurette-divider">
+<footer class="bd-footer text-muted">
+  <div class="container-fluid p-3 p-md-5">
+        <div class="float-right"><a href=https://twitter.com/vamos_robo>contact me</a></div>
+      </div>
+</footer>
+
+</body>
+</html>
