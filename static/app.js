@@ -11,8 +11,8 @@ $(function(){
   };
 
   var successResult = function(data){
-    $("#prediction").text("この写真の人は、 " + data.pred + "さんに似ています!!")
-    $("#confidence").text("信頼性: " + data.confidence + "%です!!")
+    $("#prediction").text("この写真の人の　" + data.pred + "は......")
+    $("#confidence").text("" + data.confidence + "%です!!")
     var req = {
       url: "/currentimage",
       method: "get"

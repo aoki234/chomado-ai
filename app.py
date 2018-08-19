@@ -45,13 +45,13 @@ def predict():
             load_model()
             pred = model.predict(image)
         persons = [
-            'ちょまど',
+            'ちょま度',
             'その他の人の顔'
         ]
 
-        confidence = int(round(max(pred[0]), 3)*100)
-        pred = persons[np.argmax(pred)]
+        confidence = int(round(pred[0][1], 3)*100)
         #pred = persons[np.argmax(pred)]
+        pred = persons[0]
 
         data = dict(pred=pred, confidence=str(confidence))
         return jsonify(data)
