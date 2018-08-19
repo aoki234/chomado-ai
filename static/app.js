@@ -12,7 +12,7 @@ $(function(){
 
   var successResult = function(data){
     $("#prediction").text("この写真の人の　" + data.pred + "は......")
-    $("#confidence").text("" + data.confidence + "%です!!")
+    $("#confidence").text(data.confidence + "%です!!")
     var req = {
       url: "/currentimage",
       method: "get"
