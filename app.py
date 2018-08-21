@@ -70,4 +70,4 @@ def current_image():
 
 if __name__ == '__main__':
     #load_model()
-    app.run(threaded=True)
+    app.run()
