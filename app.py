@@ -16,8 +16,8 @@ img = None
 
 def load_model():
     global model
-    keras_model="Save_model2.json"
-    keras_param="Save_model2.hdf5"
+    keras_model="Save_model3.json"
+    keras_param="Save_model3.hdf5"
     model = model_from_json(open(keras_model).read())
     model.load_weights(keras_param)
     #model.summary()
@@ -49,7 +49,7 @@ def predict():
             'その他の人の顔'
         ]
 
-        confidence = int(round(pred[0][1], 3)*100)
+        confidence = int(round(pred[0][0], 3)*100)
         #pred = persons[np.argmax(pred)]
         pred = persons[0]
 
