@@ -16,8 +16,8 @@ img = None
 
 def load_model():
     global model
-    keras_model="Save_model3.json"
-    keras_param="Save_model3.hdf5"
+    keras_model="Save_model5.json"
+    keras_param="Save_model5.hdf5"
     model = model_from_json(open(keras_model).read())
     model.load_weights(keras_param)
     #model.summary()
